@@ -5,7 +5,13 @@
 </head>
 <body>
   <script>
+    var bl=localStorage.getItem("bl");
+    if (bl==null){
     alert("hello world!");
+    localStorage.setItem("bl",true);
+    }else{
+      alert("false")
+    }
   </script>
 </body>
 </html>
